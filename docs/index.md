@@ -2,11 +2,11 @@
 
 > Same same, but different
 
-`samsam` is a collection of predicate and comparison functions useful for
+**samsam** is a collection of predicate and comparison functions useful for
 identifiying the type of values and to compare values with varying degrees of
 strictness.
 
-`samsam` is a general-purpose library with no dependencies. It works in browsers
+**samsam** is a general-purpose library with no dependencies. It works in browsers
 (including old and rowdy ones, like IE6) and Node. It will define itself as an
 AMD module if you want it to (i.e. if there's a `define` function available).
 
