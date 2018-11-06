@@ -121,7 +121,7 @@ samsam.match(234, 1234); // false
 When the matcher is a function, it is called with `object` as its only
 argument. `match` returns `true` if the function returns `true`. A strict
 match is performed against the return value, so a boolean `true` is required,
-truthy is not enough.
+_truthy_ is not enough.
 
 ```javascript
 // true
@@ -149,7 +149,7 @@ samsam.match(234, function () {});
 #### Object matcher
 
 As mentioned above, if an object matcher defines a `test` method, `match`
-will return `true` if `matcher.test(object)` returns truthy.
+will return `true` if `matcher.test(object)` returns _truthy_.
 
 If the matcher does not have a test method, a recursive match is performed. If
 all properties of `matcher` matches corresponding properties in `object`,
