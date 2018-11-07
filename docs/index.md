@@ -36,17 +36,19 @@ holds the value `1`.
 
 ### `identical(x, y)`
 
-Strict equality check according to EcmaScript Harmony's `egal`.
+Returns `true` when
+[strict equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Identity_strict_equality_())
+(`===`) is `true`, except for `-0` and `+0`, where it returns `false`.
+Additionally, it returns `true` when `NaN` is compared to itself.
+
+**NOTE:** This check is performed according to EcmaScript Harmony's `egal` method.
 
 **From the Harmony wiki:**
 
-> An egal function simply makes available the internal `SameValue` function
+> An egal function simply makes available the internal
+[`SameValue` function](http://www.ecma-international.org/ecma-262/5.1/#sec-9.12)
 from section 9.12 of the ES5 spec. If two values are egal, then they are not
 observably distinguishable.
-
-`identical` returns `true` when `===` is `true`, except for `-0` and
-`+0`, where it returns `false`. Additionally, it returns `true` when
-`NaN` is compared to itself.
 
 
 ### `deepEqual(obj1, obj2)`
